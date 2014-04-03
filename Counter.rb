@@ -1,0 +1,5 @@
+# Counter
+
+class Counter
+
+end
