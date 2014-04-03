@@ -1,0 +1,5 @@
+# Write
+
+class Write
+
+end
