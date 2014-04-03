@@ -1,0 +1,5 @@
+# Copy
+
+class Copy
+
+end
