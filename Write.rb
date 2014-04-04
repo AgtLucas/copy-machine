@@ -1,5 +1,5 @@
 # Write
 
-class Write
+class Write < WriteDecorator
 
 end
