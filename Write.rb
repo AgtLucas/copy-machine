@@ -2,14 +2,29 @@
 
 class Write < WriteDecorator
 
-  def initialize(real_writer)
-    super(real_writer)
-    @line_number = 1
+  def initialize(path)
+    @file = File.open(path, 'w')
   end
 
   def write_line(line)
-    @real_writer.write_line("#{@line_number}: #{line}")
-    @line_number += 1
+    @file.print(line)
+    @file.print('\n')
+  end
+
+  def pos
+    @file.pos
+  end
+
+  def rewind
+    @file.rewind
+  end
+
+  def close
+    @file.close
+  end
+
+  def counter
+    @file.counter
   end
 
 end
