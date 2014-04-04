@@ -11,8 +11,9 @@ class WriterDecorator
 
   def_instance_delegators :@real_writer, :write_line, :pos, :rewind, :close, :counter
 
-  def initialize(real_writer)
+  def initialize(real_writer, counter)
     @real_writer = real_writer
+    @counter = counter
   end
 
 end
