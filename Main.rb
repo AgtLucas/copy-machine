@@ -1,7 +1,7 @@
 # Require files
 
-require './AbstractRead'
-require './AbstractWrite'
+require './ReaderDecorator'
+require './WriterDecorator'
 require './Copy'
 require './Write'
 require './Read'
