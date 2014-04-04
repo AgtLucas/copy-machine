@@ -1,6 +1,6 @@
 # Write
 
-class Write < WriteDecorator
+class Write
 
   def initialize(path)
     @file = File.open(path, 'w')
